@@ -3,8 +3,8 @@ from image_loader import *
 
 st.title("See My Images")
 
-image_name = st.file_uploader(label="Upload an image: ", type=['png', 'jpg'])
+name = st.text_input("Type in a file name: ")
 
-image_move(image_name)
-
-github_upload()
+if name != '':
+    image_move(name)
+    github_upload()
