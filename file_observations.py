@@ -2,11 +2,7 @@ from os import getcwd, listdir, chdir, system
 from os.path import splitext
 import streamlit as st
 
-chdir("../../Downloads")
-
-getcwd()
-
-files = listdir(getcwd())
+files = listdir("../../Downloads")
 
 img_path = []
 
